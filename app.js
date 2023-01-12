@@ -192,28 +192,30 @@ const counterWords = [
     'code',
   ];
 
-  //function repeatCounter(param) {
+function repeatCounter(param) {
     
 
-        let i = 0;
-        let newElement = "";
+        let contador = [];
 
         for (const element of counterWords) {
         
       
-            if(counterWords.includes(element)) {
+            if(contador[element]) {
 
-                newElement = element;
-                i ++;    
-                console.log(newElement, i);
+                contador[element]++;
 
                 
             } else {
-                
+                contador[element]=1;
             }
-        
-
+            
         }
+
+    return contador;
+
+}
+
+console.log(repeatCounter(counterWords));
 
 
 
