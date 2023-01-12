@@ -72,6 +72,38 @@ function average(param) {
 }
 
 console.log(average(numbers1));
+
+
+// Iteración #5: Calcular promedio de strings
+
+
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+function averageWord(param) {
+    
+    let sumaNum = 0;
+    let sumaStr = 0;
+
+    for (const element of mixedElements) {
+        
+        if(element === element/1) {
+            sumaNum += element;
+            
+        } else {
+
+            parseInt.sumaStr;
+            sumaStr += element.length;
+           
+        }
+        
+
+    }
+
+    return sumaNum + sumaStr;
+
+}
+
+console.log(averageWord(mixedElements));
     
 
 
