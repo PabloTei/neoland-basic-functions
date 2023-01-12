@@ -12,22 +12,23 @@ console.log(sum(10, 5));
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
-for (let i = 0; i < avengers.length; i++) {
+    function findLongestWord(param) {
+        
+        let comp = "";
 
-    let long = avengers[i++];
-    
-
-if (avengers[i].length > long.length) {
+        for (const item of avengers) {
+            
+            if (item.length > comp.length) {
+                
+                comp = item;
+                
+            } 
         
-        long = avengers[i];
-        
-        console.log(avengers[i]);
-    
-    } else {
-        
+        }   
+        return comp;
     }
-    
-}
+
+console.log(findLongestWord(avengers));
 
 
 // Iteración #3: Calcular la suma
@@ -80,7 +81,7 @@ console.log(average(numbers1));
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 
 function averageWord(param) {
-    
+
     let sumaNum = 0;
     let sumaStr = 0;
 
@@ -96,7 +97,6 @@ function averageWord(param) {
            
         }
         
-
     }
 
     return sumaNum + sumaStr;
@@ -104,6 +104,30 @@ function averageWord(param) {
 }
 
 console.log(averageWord(mixedElements));
-    
+
+
+// Iteración #6: Valores únicos
+
+const duplicates = [
+    'sushi',
+    'pizza',
+    'burger',
+    'potatoe',
+    'pasta',
+    'ice-cream',
+    'pizza',
+    'chicken',
+    'onion rings',
+    'pasta',
+    'soda'
+  ];
+  //function removeDuplicates(param) {
+    console.log(duplicates[10]);
+    for (const element of duplicates) {
+        
+        if(element != element[-1]) {
+            
+        }
+    }
 
 
