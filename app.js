@@ -119,15 +119,25 @@ const duplicates = [
     'chicken',
     'onion rings',
     'pasta',
-    'soda'
+    'soda',
+    
   ];
-  //function removeDuplicates(param) {
-    console.log(duplicates[10]);
-    for (const element of duplicates) {
-        
-        if(element != element[-1]) {
+
+function removeDuplicates(param) {
+    let compElement = "";
+    let comp = [];
+
+        for (const element of duplicates) {
+
+            if(element != compElement && comp.includes(element) === false) {
+
+                compElement = element;
+                comp.push(compElement);
+
+            }
             
         }
-    }
+         return comp;
+}
 
-
+console.log(removeDuplicates(duplicates));
