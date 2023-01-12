@@ -160,7 +160,6 @@ const nameFinder = [
     'Marc'
   ];
 
-
     function finderName(name) {
 
         if (nameFinder.includes(name)) {
@@ -175,4 +174,53 @@ const nameFinder = [
     } 
 
 console.log(finderName("Marc"));
+
+
+// Iteration #8: Contador de repeticiones
+
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code',
+  ];
+
+  //function repeatCounter(param) {
+    
+
+        let i = 0;
+        let newElement = "";
+
+        for (const element of counterWords) {
+        
+      
+            if(counterWords.includes(element)) {
+
+                newElement = element;
+                i ++;    
+                console.log(newElement, i);
+
+                
+            } else {
+                
+            }
+        
+
+        }
+
+
+
+
+
+
+
+
+  //
 
